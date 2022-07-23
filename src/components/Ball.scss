@@ -1,0 +1,23 @@
+.ball {
+  color: #cccccc;
+  .default {
+    font-size: 100px;
+    position: absolute;
+    margin-top: -20%;
+    margin-left: -70%;
+    z-index: 100;
+  }
+  .animate {
+    animation: fade-out-ball 1s forwards;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes fade-out-ball {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
