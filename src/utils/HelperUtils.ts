@@ -1,3 +1,5 @@
+import { ColorCodes } from '~/@types/GenericTypes';
+
 export const shellCount = (): number => Number(process.env.SHELL_COUNT);
 
 export const shuffle = <T>(elements: T[]): Array<T> => {
@@ -8,7 +10,7 @@ export const shuffle = <T>(elements: T[]): Array<T> => {
   return [...elements];
 };
 
-export const getColors = (count): any => {
+export const getColors = (count: number): ColorCodes => {
   let colorCodes = {};
   for (let i = 0; i < count; i++) {
     colorCodes[`key${i}`] = `#${Math.floor(Math.random() * 16777215).toString(
@@ -19,7 +21,7 @@ export const getColors = (count): any => {
 };
 
 export enum Level {
-  Beginner = 1,
-  Intermediate = 2,
-  Expert = 3,
+  Beginner = 2,
+  Intermediate = 4,
+  Expert = 8,
 }

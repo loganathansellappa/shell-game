@@ -6,7 +6,7 @@ export interface GameLogState {
   losers: number;
 }
 
-const initialState: GameLogState = {
+export const initialState: GameLogState = {
   gameCount: 0,
   winners: 0,
   losers: 0,
@@ -17,12 +17,12 @@ export const gameLogSlice = createSlice({
   initialState,
   reducers: {
     updateWinner: (state: Partial<GameLogState>) => {
-      state.gameCount += 1;
-      state.winners += 1;
+      state.gameCount = state.gameCount! + 1;
+      state.winners = state.winners! + 1;
     },
     updateLoser: (state: Partial<GameLogState>) => {
-      state.gameCount += 1;
-      state.losers += 1;
+      state.gameCount = state.gameCount! + 1;
+      state.losers = state.losers! + 1;
     },
   },
 });

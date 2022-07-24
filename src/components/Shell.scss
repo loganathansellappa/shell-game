@@ -7,58 +7,16 @@
   align-self: center;
   position: relative; /* change to fixed or absolute */
   margin: 10%;
-  .selectedShell,
-  .defaultShell:hover {
-    color: #006600;
-    font-size: 200px;
-    cursor: pointer;
-  }
 
   .defaultShell {
     font-size: 200px;
     margin-top: -4%;
     z-index: 100;
   }
-  //
-  //@keyframes swingleftToRight {
-  //  0% {
-  //    transform: translateX(0);
-  //    transform: translateY(calc(40% - 100%));
-  //  }
-  //  50% {
-  //    transform: translatey(10%);
-  //    transform: translateX(calc(40% - 100%));
-  //  }
-  //  100% {
-  //    transform: translateX(100%);
-  //    transform: rotate(180deg);
-  //  }
-  //}
-  //
-  //
-  //@keyframes swingRightToLeft {
-  //  0% {
-  //    transform: translateY(0);
-  //    transform: translateX(calc(10% - 100%));
-  //  }
-  //  50% {
-  //    transform: translateX(0);
-  //    transform: translateY(calc(40% - 100%));
-  //  }
-  //  100% {
-  //    transform: rotate(360deg);
-  //  }
-  //}
-  //
-  //@-webkit-keyframes rotate {
-  //  0% {
-  //    transform: rotate(30deg);
-  //  }
-  //  50% {
-  //    transform: rotate(130deg);
-  //  }
-  //  100% {
-  //    transform: rotate(180deg);
-  //  }
-  //}
+
+  .defaultShell:hover {
+    color: #006600;
+    font-size: 200px;
+    cursor: pointer;
+  }
 }

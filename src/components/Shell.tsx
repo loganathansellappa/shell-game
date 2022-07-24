@@ -4,14 +4,12 @@ import './Shell.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Ball } from './Ball';
 
-interface ShellProps {
-  isSelected: boolean;
+export interface ShellProps {
   shellId: string;
   ballPlaced: boolean;
   color: string;
   className?: string;
   onClickHandler: (shellId: string) => void;
-  animate: boolean;
 }
 
 export const Shell = forwardRef<
@@ -19,14 +17,7 @@ export const Shell = forwardRef<
   React.PropsWithChildren<ShellProps>
 >(
   (
-    {
-      color = 'white',
-      isSelected,
-      shellId,
-      className,
-      ballPlaced,
-      onClickHandler,
-    },
+    { color = 'white', shellId, className, ballPlaced, onClickHandler },
     ref
   ) => {
     return (
@@ -35,9 +26,7 @@ export const Shell = forwardRef<
           icon={faBellConcierge}
           color={color}
           onClick={() => onClickHandler(shellId)}
-          className={`${className} ${
-            isSelected ? 'selectedShell' : 'defaultShell'
-          }`}
+          className={`${className} defaultShell`}
         />
         <div className={'ball-placed'}>
           {ballPlaced ? <Ball className={'animate'} /> : null}

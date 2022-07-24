@@ -4,7 +4,7 @@ import './Ball.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface BallProps {
-  color: string;
+  color?: string;
   className?: string;
 }
 
@@ -13,7 +13,7 @@ export const Ball = ({ color = 'red', className }: BallProps) => (
     <FontAwesomeIcon
       icon={faBaseball}
       spin={true}
-      color={color}
+      color={color!}
       className={`${className} default`}
     />
   </div>

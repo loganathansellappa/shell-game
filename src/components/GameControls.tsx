@@ -15,8 +15,6 @@ export const GameControls = ({
   gameRunning,
   gamerLevel,
 }: GameControlsProps) => {
-  console.log('gameRunning', gameRunning);
-  console.log('gamerLevel', gamerLevel);
   return (
     <div className={'game-controls'}>
       <button

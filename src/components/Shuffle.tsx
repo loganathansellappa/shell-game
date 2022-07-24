@@ -1,11 +1,8 @@
-import { Children, useEffect, useLayoutEffect, useState } from 'react';
+import React, { Children, useEffect, useLayoutEffect, useState } from 'react';
 import usePrevious from '../CustomHooks/usePrevious';
 import calculateShellBoxes from '../utils/CalculateShellBoxes';
 
-interface ShuffleProps {
-  children: Children;
-}
-const Shuffle = ({ children }: ShuffleProps) => {
+const Shuffle = ({ children }) => {
   const [ShellBox, setShellBox] = useState({});
   const [prevShellBox, setPrevShellBox] = useState({});
   const prevChildren = usePrevious(children);

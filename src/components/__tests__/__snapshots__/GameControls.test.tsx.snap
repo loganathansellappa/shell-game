@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders GameControls Component 1`] = `
+<div
+  class="game-controls"
+>
+  <button
+    class="control"
+  >
+    Start Game
+  </button>
+  <button
+    class="control"
+  >
+    Start Game With Hint
+  </button>
+  <button
+    class="control control-selected"
+  >
+    Beginner
+  </button>
+  <button
+    class="control "
+  >
+    Intermediate
+  </button>
+  <button
+    class="control "
+  >
+    Expert
+  </button>
+</div>
+`;

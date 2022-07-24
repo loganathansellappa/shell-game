@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScoreBoard renders ScoreBoard Page 1`] = `
+<div
+  class="score-board"
+>
+  <div
+    class="item"
+  >
+    <button>
+      Back to Home
+    </button>
+  </div>
+  <div
+    class="item"
+  >
+    Total Games Played 
+    1
+  </div>
+  <div
+    class="item"
+  >
+    Win Count 
+    1
+  </div>
+  <div
+    class="item"
+  >
+    Lost Count 
+    0
+  </div>
+</div>
+`;

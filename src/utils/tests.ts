@@ -15,8 +15,8 @@ export const testStore = () => {
   const mockStore = configureStore();
   const initialState = {
     gameLog: {
-      gameCount: 0,
-      winners: 0,
+      gameCount: 1,
+      winners: 1,
       losers: 0,
     },
   };

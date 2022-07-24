@@ -4,11 +4,6 @@ import { RootState } from '~/store';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-interface ScoreBoard {
-  winner: boolean;
-  reset: () => void;
-}
-
 const ScoreBoard = () => {
   const navigate = useNavigate();
   const totalWinners = useSelector((state: RootState) => state.gameLog.winners);
