@@ -41,8 +41,7 @@ yarn test
 ```
 
 ## Demo
-
-[![Watch the video](./DemoVideo/Demo.png)](./DemoVideo/DemoVideo.mp4)
+[Demo Video](./DemoVideo/DemoVideo.mp4)
 
 
 
