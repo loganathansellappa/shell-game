@@ -14,6 +14,10 @@ The player has to guess correctly which container the ball is under in order to 
 | Choose Level   |
 | Score Board    |
 
+
+## Game Rule
+- Player can choose only once during a game.
+ 
 ## Tech
 
 - [Node] - 16.14.2
@@ -45,9 +49,8 @@ yarn test
 
 
 
-## Limitations & Infos
+## Note
 
-- Only once player can choose the shell during a game
 - Animations can be improved further
 - This whole app can be written as single component, for readability & understanding
-  I've added Router/redux/multiple pages only for 
+the Router/redux/multiple pages were added, can be also done without store/with context api
