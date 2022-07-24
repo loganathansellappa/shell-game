@@ -51,6 +51,5 @@ yarn test
 
 ## Note
 
-- Animations can be improved further
 - This whole app can be written as single component, for readability & understanding
 the Router/redux/multiple pages were added, can be also done without store/with context api
